@@ -5,10 +5,12 @@ from flask import Flask, render_template, request, redirect, url_for
 import mysql.connector
 from mysql.connector import Error
 from dotenv import load_dotenv
+from prometheus_flask_exporter import PrometheusMetrics
 
 load_dotenv()
 
 app = Flask(__name__)
+metrics = PrometheusMetrics(app)
 app.secret_key = os.getenv('SECRET_KEY', 'fallback-secret')
 
 logging.basicConfig(
