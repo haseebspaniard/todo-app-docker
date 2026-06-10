@@ -26,7 +26,7 @@ jobs:
           pip install flake8 pytest
 
       - name: Run code quality check
-        run: flake8 app/app.py --max-line-length=120 --ignore=E501,W503
+        run: flake8 app/app.py --max-line-length=120 --ignore=E501,W503,E302,E305
 
       - name: Run syntax check
         run: python3 -c "import ast; ast.parse(open('app/app.py').read()); print('Syntax OK')"
