@@ -121,33 +121,25 @@ In Grafana, query `flask_http_request_total` to see all HTTP requests broken dow
 
 ---
 
-## Project Structure
+## Screenshots
 
-```
-todo-app-docker/
-├── app/
-│   ├── app.py                  # Flask application
-│   ├── requirements.txt        # Python dependencies
-│   └── templates/
-│       └── index.html          # Frontend UI
-├── nginx/
-│   └── nginx.conf              # Reverse proxy config
-├── mysql/
-│   └── init.sql                # Database initialization
-├── monitoring/
-│   ├── prometheus.yml          # Prometheus scrape config
-│   └── grafana/
-│       └── provisioning/
-│           └── datasources/
-│               └── prometheus.yml  # Auto-provisioned data source
-├── .github/
-│   └── workflows/
-│       └── ci-cd.yml           # GitHub Actions pipeline
-├── Dockerfile                  # Multi-stage build
-├── docker-compose.yml          # Full stack orchestration
-├── .env.example                # Environment variable template
-└── .gitignore
-```
+### Todo Application
+<img width="1297" height="632" alt="image" src="https://github.com/user-attachments/assets/5a8f3631-40e8-47b9-96ff-671ae0602d8c" />
+
+### All Containers Running
+<img width="1290" height="157" alt="image" src="https://github.com/user-attachments/assets/89f0fbee-04f0-4b50-a3fd-07c939e04f08" />
+
+### Prometheus Monitoring
+<img width="1299" height="545" alt="image" src="https://github.com/user-attachments/assets/d51c671e-42bb-4ce3-88b5-777cd1180461" />
+
+### Grafana Dashboard
+<img width="1293" height="633" alt="image" src="https://github.com/user-attachments/assets/67f62dd8-07e1-4ed6-beec-847d3de3ab96" />
+
+### CI/CD Pipeline
+<img width="1366" height="639" alt="image" src="https://github.com/user-attachments/assets/6f279819-80bd-4249-ab9a-e20e712c988e" />
+
+### Docker Hub
+<img width="1337" height="497" alt="image" src="https://github.com/user-attachments/assets/5a7623da-b322-430b-9ad5-aa40f6890702" />
 
 ---
 
